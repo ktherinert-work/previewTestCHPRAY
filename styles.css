@@ -800,7 +800,18 @@ body {
     font-size: clamp(1.3rem, 2vw, 2rem);
     line-height: 1.5;
     font-weight: 600;
-    max-width: 760px;
+    align-self: stretch;
+}
+
+.CTA-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-self: stretch;
 }
 
 .footer {
