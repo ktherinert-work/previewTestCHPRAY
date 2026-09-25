@@ -513,3 +513,333 @@ body {
     line-height: normal;
     align-self: stretch;
 }
+
+.product-list-page {
+    background: linear-gradient(180deg, #FFF 0%, #f9f4ef 28%, #FFF 100%);
+}
+
+.mini-header {
+    display: flex;
+    width: 100%;
+    padding: 18px 24px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(253, 246, 228, 0.9);
+    border-bottom: 1px solid rgba(128, 43, 4, 0.08);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-buttons a {
+    color: #1f1e1c;
+    font-family: "Noto Sans";
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.catalog-shell {
+    display: flex;
+    width: min(1200px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 48px 0 72px;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.catalog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 12px;
+}
+
+.eyebrow {
+    color: #fff;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.eyebrow-dark {
+    color: #802B04;
+}
+
+.catalog-header h1 {
+    color: #1f1e1c;
+    font-family: "Playfair Display";
+    font-size: clamp(2.1rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.catalog-header p:last-child {
+    max-width: 760px;
+    color: #52504b;
+    font-family: "Noto Sans";
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-item {
+    display: grid;
+    grid-template-columns: minmax(250px, 420px) minmax(0, 1fr);
+    gap: 28px;
+    align-items: stretch;
+    padding: 18px;
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.45));
+    border: 1px solid rgba(128, 43, 4, 0.12);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 18px 40px rgba(42, 29, 22, 0.06);
+}
+
+.product-image {
+    min-height: 310px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image--cerdo {
+    background-image: url(images/cerdo.jpg);
+}
+
+.product-image--cebolla {
+    background-image: url(images/Cebolla.jpg);
+}
+
+.product-image--salmon {
+    background-image: url(images/salmon.jpg);
+}
+
+.product-image--pollo {
+    background-image: url(images/pollo.jpg);
+}
+
+.product-image--pollo2 {
+    background-image: url(images/pollo2.jpg);
+}
+
+.product-image--pollo3 {
+    background-image: url(images/pollo3.jpg);
+}
+
+.product-image--carneRes {
+    background-image: url(images/carneRes.jpg);
+}
+
+.product-image--carneRes2 {
+    background-image: url(images/res2.jpg);
+}
+
+.product-image--falafel {
+    background-image: url(images/falafe.jpg);
+}
+
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    padding: 8px 4px;
+}
+
+.product-tag {
+    display: inline-flex;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(128, 43, 4, 0.1);
+    color: #802B04;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.product-info h2 {
+    color: #1f1e1c;
+    font-family: "Playfair Display";
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.product-subtitle {
+    color: #52504b;
+    font-family: "Noto Sans";
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.product-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-info li {
+    position: relative;
+    padding-left: 18px;
+    color: #383733;
+    font-family: "Noto Sans";
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.product-info li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #802B04;
+    font-weight: 700;
+}
+
+.product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 6px;
+}
+
+.product-meta span {
+    display: inline-flex;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #f3ece5;
+    color: #383733;
+    font-family: "Noto Sans";
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.product-features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 4px;
+}
+
+.mini-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(128, 43, 4, 0.08);
+}
+
+.mini-block h3 {
+    color: #1f1e1c;
+    font-family: "Noto Sans";
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.mini-block p {
+    color: #52504b;
+    font-family: "Noto Sans";
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.maqueta-banner {
+    padding: 48px 0 0;
+}
+
+.maqueta-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 36px 28px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(128, 43, 4, 0.82), rgba(67, 74, 89, 0.72));
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 18px 40px rgba(22, 24, 31, 0.2);
+}
+
+.maqueta-panel p {
+    color: rgba(255,255,255,0.9);
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.maqueta-panel h3 {
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    line-height: 1.5;
+    font-weight: 600;
+    max-width: 760px;
+}
+
+.footer {
+    background: rgba(253,246,228,0.95);
+    border-top: 1px solid rgba(128, 43, 4, 0.08);
+}
+
+@media (max-width: 860px) {
+    .product-item {
+        grid-template-columns: 1fr;
+    }
+
+    .product-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .mini-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .header-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .catalog-shell {
+        width: min(100% - 20px, 1200px);
+        padding-top: 24px;
+    }
+
+    .product-item {
+        padding: 12px;
+    }
+
+    .product-image {
+        min-height: 240px;
+    }
+}
